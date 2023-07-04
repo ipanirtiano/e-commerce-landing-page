@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+a, p{
+    font-size: 14px;
+    font-weight: 300;
+}
+/* navbar */
+.section-navbar{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 45px;
+    background-color: #172542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    width: 90%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.navbar-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 45px;
+}
+.navbar-menu li{
+    height: 45px;
+}
+.navbar-menu a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 45px;
+    padding: 0 30px;
+    color: #fff;
+    font-weight: 300;
+    transition: all 0.4s ease;
+}
+.navbar-menu a:hover{
+    color: #ffd333;
+}
+#toggle-menu{
+    display: none;
+}
+.navbar-chart{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+.navbar-chart::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ffd333;
+    border-radius: 50%;
+    right: -10px;
+    position: absolute;
+}
+/* end navbar */
+
+/* herro */
+.section-herro{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.herro{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    position: relative;
+    width: 70%;
+    height: 400px;
+    padding: 10px 10px 0 0;
+}
+.left-tittle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 2;
+}
+.tittle{
+    width: 60%;
+    text-align: center;
+    
+}
+.left-tittle h1{
+    font-weight: 300;
+    font-size: 46px;
+}
+.left-tittle p{
+    margin-bottom: 30px;
+}
+.left-img{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.left-img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3d464d;
+    opacity: 0.7;
+    z-index: 1;
+}
+.left-img img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.right{
+    width: 30%;
+    height: 400px;
+}
+.right-img{
+    background-color: #c1bcbc;
+    width: 100%;
+    height: 190px;
+    margin: 10px 0 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+.right-img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3d464d;
+    opacity: 0.7;
+    z-index: 1;
+}
+.right-img:hover img{
+    transform: scale(1.2);
+    z-index: 0;
+}
+.right-tittle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 1;
+}
+.right-tittle h4{
+    font-weight: 300;
+}
+.right-tittle h2{
+    margin-bottom: 9px;
+    font-size: 26px;
+}
+.right-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+}
+.btn-link{
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 15px;
+    transition: all 0.5s ease;
+
+}
+.btn-link:hover{
+    background-color: #fff;
+    color: #172542;
+}
+.offered{
+    background-color: #ffd333;
+    color: #172542;
+    border: none;
+    font-weight: 400;
+}
+/* end herro */
+
+
+/* fitur */
+section{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.contain{
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+}
+.product-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    display: flex;
+    width: 24%;
+    height: 100px;
+}
+.card-icon{
+    background-color: #fff;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-tittle{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    padding:20px 10px;
+    background-color: #fff;
+    color: #3d464d;
+    flex-direction: column;
+}
+.card-icon span{
+    color: #ffd333;
+    font-size: 60px;
+}
+/* end fitur */
+
+
+/* categories */
+.contain h1{
+    color: #3d464d;
+    position: absolute;
+    background-color: #f5f5f5;
+    padding-right: 25px;
+    top: -20px;
+    font-size: 26px;
+}
+.border-top{
+    border-top: 1px solid #939393;
+    padding-top: 30px;
+}
+.card-icon{
+    padding: 0 10px;
+    width: 200px;
+}
+.card-tittle h5{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.card-icon img{
+    width: 100%;
+}
+/* end categories */
+
+
+/*  flash sale */
+.link-product{
+    text-decoration: none;
+    color: #3d464d;
+    width: 19%;
+}
+.card-product{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.6);
+}
+.img-product{
+    width: 100%;
+    height: 180px;
+    background-color: #b6b4b4;
+    overflow: hidden;
+}
+.img-product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease-in-out;
+}
+.tittle-product{
+    text-align: center;
+    height: 120px;
+    padding: 10px;
+}
+.tittle-product h4{
+    margin-bottom: 4px;
+}
+.tittle-product #offered-price{
+    font-size: 12px;
+    color: #3d464d;
+    text-decoration: line-through;
+}
+.tittle-product #percentage{
+    font-size: 12px;
+    font-weight: bold;
+}
+.tittle-product i{
+    font-size: 16px;
+}
+.tittle-product p span{
+    text-decoration: none;
+}
+.link-product:hover img{
+    transform: scale(1.2);
+}
+/* end flas sale */
+
+/* Footer */
+.footer{
+    align-items: flex-start;
+}
+.col{
+    width: 24%;
+}
+.col h2{
+    margin-bottom: 17px;
+}
+.col .description{
+    margin-bottom: 14px;
+}
+.col p{
+    margin-bottom: 8px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+.col span{
+    margin-right: 8px;
+    color: #ffd333;
+}
+.col{
+    width: 24%;
+}
+.col li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.col a{
+    text-decoration: none;
+    color: #fff;
+}
+.col{
+    width: 24%;
+    padding: 0 15px;
+    margin-bottom: 16px;
+}
+.mail{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+input{
+    width: 150px;
+    border: none;
+    outline: none;
+    padding: 6px 13px;
+    margin-right: 8px;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: #ffd333;
+    color: #172542;
+    padding: 8px 8px;
+}
+.mark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #324160;
+    color: #fff;
+}
+.mark p{
+    font-size: 11px;
+}
+/* end footer */
+
+
+/* responsive mobile */
+@media only screen and (max-width: 600px) {
+    /* navbar */
+    .navbar{
+        justify-content: space-between;
+        width: 90%;
+    }
+    .navbar-menu{
+        position: fixed;
+        width: 100%;
+        height: 300px;
+        padding: 0;
+        left: 0;
+        top: -1110px;
+        padding-top: 45px;
+        background-color: #172542;
+        transition: all 0.5s ease-in-out;
+        z-index: 999;
+    }
+    .navbar-logo{
+        display: none;
+    }
+    .navbar-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-menu li{
+        width: 100%;
+    }
+    .navbar-menu a{
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+    .navbar-menu a:hover{
+        border: none;
+        background-color: transparent;
+        color: #fff;
+    }
+    #toggle-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar-menu #toggle-menu{
+        position: absolute;
+        top: 15px;
+        right: 5%;
+    }
+    .menu-active{
+        top:0;
+    }
+    /* end navbar */
+
+    /* herro */
+    .left{
+        width: 100%;
+        height: 300px;
+        padding: 10px 0;
+    }
+    .tittle{
+        width: 90%;
+    }
+    .left-tittle h1{
+        font-size: 36px;
+    }
+    .right{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        gap: 10px;
+    }
+    .right-img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .right-tittle h4{
+        font-weight: 300;
+    }
+    .right-tittle h2{
+        margin-bottom: 9px;
+        font-weight: 300;
+        font-size: 20px;
+    }
+    /* end herro */
+
+    /* fitur */
+    .card{
+        width: 100%;
+    }
+
+    .link-product{
+        width: 100%;
+    }
+    /* end fitur */
+
+    .footer{
+        flex-wrap: wrap;
+    }
+    .col{
+        width: 100%;
+    }
+    .col h2{
+        font-size: 18px;
+    }
+    .col p{
+        font-size: 13px;
+    }
+    .col{
+        width: 100%;
+    }
+    .col{
+        width: 100%;
+    }
+}
+
+
+
+/* responsive Tablet */
+@media only screen and (max-width: 1000px) and (min-width: 600px){
+    .navbar-logo{
+        display: none;
+    }
+    .navbar-menu a{
+        height: 45px;
+        padding: 0 20px;
+    }
+    .tittle{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .right-tittle h4{
+        font-weight: 300;
+    }
+    .right-tittle h2{
+        margin-bottom: 9px;
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    /* fitur */
+    .card{
+        width: 49%;
+    }
+    .link-product{
+        width: 49%;
+    }
+    
+    /* end fitur */
+
+    .col{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1340px) and (min-width: 900px){
+    .contain{
+        justify-content: space-between;
+    }
+    .link-product{
+        width: 24%;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 800px){
+    
+    .link-product{
+        width: 29%;
+    }
+}
