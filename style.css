@@ -222,6 +222,7 @@ section{
     justify-content: flex-start;
     align-items: center;
     padding: 20px 0;
+    gap: 10px;
 }
 .product-container{
     width: 100%;
